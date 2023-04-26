@@ -12,6 +12,8 @@ driver = webdriver.Firefox()
 #open the website of moodle
 driver.get("https://moodle.polytechnic.bh/moodle/login/")
 
+#called the ttitle of driver is moodle
+assert "Moodle" in driver.title
 
-
-
+#declare the username and paassword element using by.name
+elem = driver.find_element(By.NAME, "q")
