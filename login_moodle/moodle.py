@@ -15,5 +15,12 @@ driver.get("https://moodle.polytechnic.bh/moodle/login/")
 #called the ttitle of driver is moodle
 assert "Moodle" in driver.title
 
-#declare the username and paassword element using by.name
-elem = driver.find_element(By.NAME, "q")
+#declare the username and paassword element using id
+uname = driver.find_element("id", "username")
+paass = driver.find_element("id", "password")
+
+#add your username and pass verible to usname and paass
+uname.send_keys("username")
+paass.send_keys("password")
+
+#click 
