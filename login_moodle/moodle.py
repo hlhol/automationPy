@@ -24,4 +24,4 @@ uname.send_keys(username)
 paass.send_keys(password)
 
 #click 
-driver.find_element("name", "commit").click()
+driver.find_element("id", "loginbtn").click()
