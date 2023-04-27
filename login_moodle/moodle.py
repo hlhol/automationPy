@@ -3,8 +3,8 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 
 # declare your username and pass in verible:
-username = "username"
-password = "password"
+username = "202201389"
+password = "12hm34rs#$"
 
 #driver of firefox
 driver = webdriver.Firefox()
@@ -20,7 +20,8 @@ uname = driver.find_element("id", "username")
 paass = driver.find_element("id", "password")
 
 #add your username and pass verible to usname and paass
-uname.send_keys("username")
-paass.send_keys("password")
+uname.send_keys(username)
+paass.send_keys(password)
 
 #click 
+driver.find_element("name", "commit").click()
