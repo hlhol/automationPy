@@ -3,8 +3,8 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 
 # declare your username and pass in verible:
-username = "202201389"
-password = "12hm34rs#$"
+username = "your username"
+password = "your password"
 
 #driver of firefox
 driver = webdriver.Firefox()
